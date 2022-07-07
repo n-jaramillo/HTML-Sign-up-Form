@@ -28,12 +28,12 @@
                 <input type="text" id="email" name="email">
             <!-- Todo: Street Address Input -->
                 <labe for="address">Your Street Address</label>
-                <input type="text" name="address">
+                <input type="text" id="address" name="address">
             <!-- Todo: City, State, and Zip Inputs -->
                 <label for="city">Your City</label>
-                <input type="text" name="city">
+                <input type="text" id="city" name="city">
                 <label for="state">Your State</label>
-                <select name="state">
+                <select name="state" id="state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -85,13 +85,51 @@
                     <option value="WY">Wyoming</option>
                 </select>
                 <label for="zip">Your Zipcode</label>
-                <input type="text" name="zip">
+                <input type="text" id="zip" name="zip">
             </fieldset>
             <!-- TODO: Second fieldset -->
+            <fieldset>
+                <legend>Your Preferences</legend>
             <!-- TODO: Radio buttons for selecting preferred destination -->
+                <h3>Choose your location</h3>
+                <div>
+                    <input type="radio" id="aruba" name="location" value="Aruba" checked>
+                    <label for="aruba">Aruba</label>
+                </div>
+                <div>
+                    <input type="radio" id="japan" name="location" value="Japan" checked>
+                    <label for="japan">Japan</label>
+                </div>
+                <div>
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik" checked>
+                    <label for="reykjavik">Reykjavik</label>
+                </div>
+                <div>
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand" checked>
+                    <label for="new-zealand">New Zealand</label>
+                </div>
             <!-- TODO: Color input for selecting favorite color -->
+                <label for="color">Your Favorite Color</label>
+                <input type="color" name="color">
             <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
+                <h3>Choose your extras</h3>
+                <div>
+                    <input type="checkbox" id="sauna-access" name="extras" value="Sauna Access" unchecked>
+                    <label for="sauna-access">Sauna Access</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="in-room-hot-tub" name="extras" value="In-Room Hot Tub" unchecked>
+                    <label for="in-room-hot-tub">In-Room Hot Tub</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="private-yurt" name="extras" value="Private Yurt" unchecked>
+                    <label for="private-yurt">Private Yurt</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="personal-chef" name="extras" value="Personal Chef" unchecked>
+                    <label for="personal-chef">Personal Chef</label>
+                </div>
+            </fieldset>
             <!-- TODO: Submit Button -->
         </form>
     </main>
